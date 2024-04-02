@@ -1,0 +1,38 @@
+nav{
+    width: 20%;
+    z-index: 100;
+}
+input[type = "checkbox"]:checked + nav{
+    width: 4.5%;
+}
+input[type = "checkbox"]:checked + nav a{
+    overflow: hidden;
+}
+input[type = "checkbox"]:checked + nav div .menu_titulo{
+    visibility: hidden;
+}
+input[type = "checkbox"]:checked + nav div .subtitulo{
+    visibility: hidden;
+}
+@media (width < 900px) {
+    nav{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        box-shadow: none;
+    }
+    nav > div{
+        padding:  0 10px 0 0;
+        max-width: 250px;
+    }
+    nav > label{
+        width: 100%;
+        height: 100%;
+    }
+    input[type = "checkbox"]:checked + nav{
+        width: 0%;
+        overflow: hidden;
+    }
+}
