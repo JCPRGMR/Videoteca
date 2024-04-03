@@ -30,7 +30,7 @@
                 <div class="hp10 mayus fz11 menu_titulo space-nw">
                     area de programaci&oacute;n
                 </div>
-                <a href="" class="white f-row p10 br7 transition02 hover8 negrita mayus">
+                <a href="../" class="white f-row p10 br7 transition02 hover8 negrita mayus">
                     <li class="f-row gap10">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
