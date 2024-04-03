@@ -15,7 +15,7 @@
                 <div class="hp10 mayus fz11 menu_titulo space-nw">
                     area de prensa
                 </div>
-                <a href="" class="white f-row p10 br7 transition02 hover8 negrita mayus">
+                <a href="../View/Prensa.php" class="white f-row p10 br7 transition02 hover8 negrita mayus">
                     <li class="f-row gap10">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-reels-fill" viewBox="0 0 16 16">
@@ -46,15 +46,13 @@
     </nav>
     <main class="w100p f-col">
         <header class="color6 p10 negrita mayus f-row a-c">
-            <label class="br7 pointer" for="menu">
+            <label class="br7 pointer f-row a-c gap5 fz20" for="menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
+                <div>
+                    videoteca
+                </div>
             </label>
         </header>
-        <main class="h100p p10">
-            Soy la ventana de contenido
-        </main>
-    </main>
-</body>
-</html>
+        <main class="h100p p10 color7">
