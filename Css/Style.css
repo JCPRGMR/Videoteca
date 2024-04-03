@@ -1800,3 +1800,15 @@ input, textarea, button{
 .leyenda_top:hover + div{
     visibility: visible;
 }
+
+
+.forms {
+    display: flex; 
+}
+
+.forms > div {
+    margin-right: 200px; 
+}
+
+
+

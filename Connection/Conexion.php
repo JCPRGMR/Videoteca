@@ -22,7 +22,7 @@
                 self::$h_registro = date('H:i:s');
                 self::$alter = date('Y-m-d H:i:s');
                 echo 'Conexion perfecta';
-                // return $stmt;
+                return $stmt;
             } catch (PDOException $th) {
                 echo $th->getMessage();
             }

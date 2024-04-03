@@ -7,7 +7,20 @@
                 <input type="text" name="" id="" placeholder="Ingresar valor" class="p10 br10">
                 <div class="relative">
                 </div>
+
+
+                <div class="forms">
+                <div><h3>TITULO</h3>
+                <input type="text" name="" id="" placeholder="Ingrese encabezado" class="form-uno"></div>              
+                <div><h3>DETALLES DEL EVENTO</h3>
+                <input type="text" name="" id="" placeholder="Ingrese detalles del evento" class="form-dos"></div>
+                </div>
+                <div><input type="file"></div>
+                
             </div>
+            
+
+
             <div class="relative f-col gap10">
                 <label for="" class="negrita mayus">AREA DE COBERTURA</label>
                 <input type="text" name="" id="" placeholder="Ingresar valor" class="p10 br10">
