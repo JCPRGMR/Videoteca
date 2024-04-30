@@ -1,5 +1,7 @@
 <?php
-    $post = (Object)$_POST;
+    $_POST = array_map(function($value) {
+        return strtoupper(trim($value));
+    }, $_POST);
     date_default_timezone_set("America/Caracas");
     Class Conexion{
         #DATOS DE LA BASE DE DATOS
@@ -21,7 +23,6 @@
                 self::$f_registro = date('Y-m-d');
                 self::$h_registro = date('H:i:s');
                 self::$alter = date('Y-m-d H:i:s');
-                echo 'Conexion perfecta';
                 return $stmt;
             } catch (PDOException $th) {
                 echo $th->getMessage();

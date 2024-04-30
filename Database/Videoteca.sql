@@ -1,4 +1,4 @@
--- Active: 1709320591459@@127.0.0.1@3306@videoteca
+-- Active: 1709692087089@@127.0.0.1@3306@videoteca
 drop database videoteca;
 create database videoteca;
 use videoteca;
@@ -35,16 +35,21 @@ create table tipos(
 );
 create table videos(
     id_video bigint not null primary key auto_increment,
+    cod_video varchar(25) not null,
     titulo varchar(50) not null,
     detalles text not null,
     ruta text not null,
     ruta_apache text not null,
     nombre_original text not null,
-    miniatura text not null,
+    miniatura text,
     id_fk_departamento int not null,
+    id_fk_area int not null,
+    id_fk_tipo int not null,
     fecha_subida date not null,
     f_registro_video datetime not null,
     f_modificacion_video datetime not null,
+    Foreign Key (id_fk_area) REFERENCES areas(id_area),
+    Foreign Key (id_fk_tipo) REFERENCES tipos(id_tipo),
     Foreign Key (id_fk_departamento) REFERENCES departamentos(id_departamento)
 );
 create table contratos(
@@ -81,3 +86,15 @@ create table usuarios_actividad(
     Foreign Key (id_fk_actividad) REFERENCES actividades(id_actividad),
     Foreign Key (id_fk_video) REFERENCES videos(id_video)
 );
+
+INSERT INTO departamentos(id_departamento, des_departamento, f_registro_departamento, f_modificacion_departamento) VALUES
+(1, "PRENSA", NOW(), NOW()),
+(2, "PROGRAMACION", NOW(), NOW());
+
+DROP VIEW vista_videos;
+CREATE VIEW vista_videos
+AS
+SELECT cod_video, des_area, des_tipo, id_departamento, des_departamento, titulo, detalles, ruta_apache, ruta, miniatura, id_video FROM videos
+INNER JOIN areas on videos.id_fk_area = id_area
+INNER JOIN tipos on videos.id_fk_tipo = id_tipo
+INNER JOIN departamentos on videos.id_fk_departamento = id_departamento ORDER BY f_registro_video DESC
