@@ -5,7 +5,7 @@
         area de programacion - rtp
     </div>
     <div class="p10 br10 f-row wrap gap10">
-        <a href="PrensaInsertar.php" class="negrita white color2 p10 br10 flex-1 f-row jc-c a-c">
+        <a href="ProgramacionInsertar.php" class="negrita white color2 p10 br10 flex-1 f-row jc-c a-c">
             CREAR REGISTRO
         </a>
         <a href="" class="white negrita color4 p10 br10 flex-1 f-row jc-c a-c">
@@ -15,7 +15,7 @@
     <div class="color1 m10 overflow-auto">
         <table class="color7 w100p h100p collapse" border="1">
             <thead class="">
-                <th class="center white p10">CODIGO</th>
+                <th classw="center white p10">CODIGO</th>
                 <th class="center white p10">AREA</th>
                 <th class="center white p10">TIPO</th>
                 <th class="center white p10">TITULO</th>

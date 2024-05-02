@@ -13,4 +13,4 @@
         // var_dump($_POST);
         // var_dump($_FILES);
     }
-    header("Location: ../View/Prensa.php"); 
+    header("Location: ../View/Programacion.php"); 

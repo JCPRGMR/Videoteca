@@ -91,7 +91,7 @@ INSERT INTO departamentos(id_departamento, des_departamento, f_registro_departam
 (1, "PRENSA", NOW(), NOW()),
 (2, "PROGRAMACION", NOW(), NOW());
 
-DROP VIEW vista_videos;
+-- DROP VIEW vista_videos; 
 CREATE VIEW vista_videos
 AS
 SELECT cod_video, des_area, des_tipo, id_departamento, des_departamento, titulo, detalles, ruta_apache, ruta, miniatura, id_video FROM videos
