@@ -5,23 +5,27 @@
         area de programacion - rtp
     </div>
     <div class="p10 br10 f-row wrap gap10">
-        <a href="ProgramacionInsertar.php" class="negrita white color2 p10 br10 flex-1 f-row jc-c a-c">
+        <a href="ProgramacionInsertar.php" class="text2 b1 p10 hover2 br10 negrita flex-1 center transition02">
             CREAR REGISTRO
         </a>
-        <a href="" class="white negrita color4 p10 br10 flex-1 f-row jc-c a-c">
+        <a href="ReportesFiltro.php?dp=dpa" class="b1 negrita text4 hover4 p10 br10 flex-1 f-row jc-c a-c transition02">
             REPORTES PDF - EXCEL
         </a>
+    </div>
+    <div class="p10 br10 f-row wrap jc-b">
+        <div></div>
+        <input type="search" name="" id="Buscador" placeholder="Buscador..." class="p10 br5">
     </div>
     <div class="color1 m10 overflow-auto">
         <table class="color7 w100p h100p collapse" border="1">
             <thead class="">
-                <th classw="center white p10">CODIGO</th>
+                <th class="center white p10">CODIGO</th>
                 <th class="center white p10">AREA</th>
                 <th class="center white p10">TIPO</th>
                 <th class="center white p10">TITULO</th>
                 <th class="center white p10">VIDEO</th>
             </thead>
-            <tbody>
+            <tbody id="body">
                 <?php foreach(Videos::Mostrar(2) as $item):?>
                     <tr class="white">
                         <td class="color8 p10 center"><?= $item->cod_video ?></td>
@@ -41,3 +45,4 @@
         </table>
     </div>
 </div>
+<script src="../Js/Buscador.js"></script>

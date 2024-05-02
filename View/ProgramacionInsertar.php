@@ -6,8 +6,8 @@
     <small class="text4 center w100p">
         llene de manera correcta el presente formulario
     </small><br>
-    <form action="../Request/Programacion.php" method="post" class="f-col gap10" enctype="multipart/form-data">
-        <div class="f-row w100p jc-b gap10">
+    <form action="../Request/Programacion.php" method="post" class="f-col gap10 overflow-auto" enctype="multipart/form-data">
+        <div class="f-row w100p jc-b gap10 wrap">
             <div class="f-col mayus negrita flex-1">
                 <div class="f-col gap10">
                     <label for="">Area de cobertura</label>
@@ -39,7 +39,7 @@
                 <input type="date" name="fecha" id="fecha" value="<?= date('Y-m-d')?>" class="p10 br5" max="<?= date('Y-m-d')?>">
             </div>
         </div>
-        <div class="f-row w100p jc-b gap10">
+        <div class="f-row w100p jc-b gap10 wrap">
             <div class="f-col gap10 mayus negrita flex-1">
                 <label for="">Titulo</label>
                 <input type="search" name="titulo" id="titulo" placeholder="Area de coberutra" class="p10 br5">
@@ -52,7 +52,7 @@
         <div class="center p10 mayus negrita fz20">
             CONTRATO
         </div>
-        <div class="f-row w100p jc-b gap10">
+        <div class="f-row w100p jc-b gap10 wrap">
             <div class="f-col gap10 mayus negrita flex-1">
                 <label for="">Nro. de contrato</label>
                 <input type="search" name="nro_contrato" id="nro_contrato" placeholder="Nro. de contrato" class="p10 br5">
@@ -67,7 +67,7 @@
             </div>
         </div>
         <br>
-        <div class="f-row w100p jc-b gap10">
+        <div class="f-row w100p jc-b gap10 wrap">
             <div class="f-col gap10 mayus negrita flex-1">
                 <label for="">Seleccionar Video</label>
                 <input type="file" name="video" id="video" class="p10" accept=".mp4">
