@@ -13,11 +13,6 @@
                 Editar
             </button> -->
         </div>
-        
-        <!-- <small class="w100p white center">
-            <?php // (Videos::Ver($_POST["ver"])->id_departamento == 1) ? "prensa" : "" ; ?>
-            <?php // (Videos::Ver($_POST["ver"])->id_departamento == 2) ? "programacion" : "" ; ?>
-        </small> -->
         <div class="f-col p20">
             <video class="w100p" controls controlsList="nodownload">
                 <source src="<?= Videos::Ver($_POST["ver"])->ruta_apache?>" type="video/mp4">

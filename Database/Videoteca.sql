@@ -1,5 +1,5 @@
--- Active: 1709692087089@@127.0.0.1@3306@videoteca
-drop database videoteca;
+-- Active: 1714663991828@@127.0.0.1@3306@control_de_asistencia
+-- drop database videoteca;
 create database videoteca;
 use videoteca;
 create table usuarios(
