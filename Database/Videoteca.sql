@@ -6,6 +6,7 @@ create table usuarios(
     id_usuario int not null primary key auto_increment,
     username varchar(25) not null,
     contrasenas varchar(25) not null,
+    rol varchar(50) not null,
     f_registro_usuario datetime not null,
     f_modificacion_usuario datetime not null
 );
@@ -13,7 +14,7 @@ create table actividades(
     id_actividad int not null primary key AUTO_INCREMENT,
     des_actividad varchar(50) not null,
     f_registro_actividad datetime not null,
-    f_modificcacion_actividad datetime not null
+    f_modificacion_actividad datetime not null
 );
 create table departamentos(
     id_departamento int not null PRIMARY key AUTO_INCREMENT,
@@ -78,18 +79,22 @@ create table etiquetas(
 );
 create table usuarios_actividad(
     remote_addr varchar(20) not null,
-    http_cookie text,
+    http_cookie text not null,
     id_fk_usuario int not null,
     id_fk_actividad int not null,
-    id_fk_video bigint not null,
+    cod_video varchar(25) not null,
+    f_registro_usuario_actividad datetime,
+    f_modificacion_usuario_actividad datetime,
     Foreign Key (id_fk_usuario) REFERENCES usuarios(id_usuario),
-    Foreign Key (id_fk_actividad) REFERENCES actividades(id_actividad),
-    Foreign Key (id_fk_video) REFERENCES videos(id_video)
+    Foreign Key (id_fk_actividad) REFERENCES actividades(id_actividad)
 );
 
 INSERT INTO departamentos(id_departamento, des_departamento, f_registro_departamento, f_modificacion_departamento) VALUES
 (1, "PRENSA", NOW(), NOW()),
 (2, "PROGRAMACION", NOW(), NOW());
+
+INSERT INTO usuarios(username, contrasenas, rol, f_registro_usuario, f_modificacion_usuario) VALUES
+("isla1", "1sl41", "ADMINISTRADOR", NOW(), NOW());
 
 -- DROP VIEW vista_videos; 
 CREATE VIEW vista_videos

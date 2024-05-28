@@ -2,15 +2,15 @@
 <?php include_once "../Class/Videos.php"; ?>
 <div class="br10 w100p h100p color8 overflow-hidden border-box">
     <div class="mayus center fz30 text6 color7 negrita p10 br10 m10">
-        area de prensa - rtp
+        area de prensa - rtp <?= $_SESSION["usuario"]->username ?>
     </div>
     <div class="p10 br10 f-row wrap gap10">
         <a href="PrensaInsertar.php" class="text2 b1 p10 hover2 br10 negrita flex-1 center transition02">
             CREAR REGISTRO
         </a>
-        <a href="ReportesFiltro.php?dp=dpa" class="b1 negrita text4 hover4 p10 br10 flex-1 f-row jc-c a-c transition02">
+        <!-- <a href="ReportesFiltro.php?dp=dpa" class="b1 negrita text4 hover4 p10 br10 flex-1 f-row jc-c a-c transition02">
             REPORTES PDF - EXCEL
-        </a>
+        </a> -->
     </div>
     <div class="p10 br10 f-row wrap jc-b">
         <div></div>

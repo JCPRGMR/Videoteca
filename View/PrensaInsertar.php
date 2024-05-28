@@ -52,9 +52,12 @@
         <br>
         <div class="f-row w100p jc-b gap10 wrap">
             <input type="file" name="video" id="video" class="p10" accept=".mp4" autocomplete="off">
-            <button type="submit" name="subir" value="1" class="color2 white negrita mayus br10 hp20 pointer">
+            <button type="submit" name="subir" value="1" class="color2 white negrita mayus br10 hp20 pointer" onclick="localStorage.clear()">
                 Subir archivo
             </button>
+            <a href="Prensa.php" class="color4 white mayus negrita hp10 f-col jc-c a-c br10" onclick="localStorage.clear()">
+                Volver atras
+            </a>
         </div>
     </form>
 </div>
