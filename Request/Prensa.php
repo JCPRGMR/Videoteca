@@ -11,4 +11,4 @@
             include_once "../Controllers/Videos.php";
         }
     }
-    header("Location: ../View/Prensa.php");
+    // header("Location: ../View/Prensa.php");

@@ -72,9 +72,29 @@
                 </div>
             </form>
         </div>
-    </main>
-</body>
-</html>
+        <div class="f-row w100p jc-b gap10 wrap">
+            <div class="f-col gap10 mayus negrita flex-1">
+                <label for="">Titulo</label>
+                <input type="search" name="titulo" id="titulo" placeholder="Area de cobertura" class="p10 br5" autocomplete="off">
+            </div>
+            <div class="f-col gap10 mayus negrita flex-1">
+                <label for="">Descripcion del evento</label>
+                <textarea name="detalles" id="detalles" cols="30" rows="1" placeholder="Descripcion..." class="p10 br5"></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="f-row w100p jc-b gap10 wrap">
+            <input type="file" name="video" id="video" class="p10" accept=".mp4" autocomplete="off">
+            <button type="submit" name="subir" value="1" class="color2 white negrita mayus br10 hp20 pointer" onclick="localStorage.clear()">
+                Subir archivo
+            </button>
+            <a href="Prensa.php" class="color4 white mayus negrita hp10 f-col jc-c a-c br10" onclick="localStorage.clear()">
+                Volver atras
+            </a>
+        </div>
+    </form>
+</div>
+>>>>>>> bbb139a96bcfa5a7d2691ea02c6497666556494a
 <script src="../Js/Select1.js"></script>
 <script src="../Js/RecuperarValores.js"></script>
 <script>

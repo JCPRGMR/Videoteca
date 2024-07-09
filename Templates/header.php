@@ -1,5 +1,6 @@
 <?php include_once "../Class/Areas.php" ?>
 <?php include_once "../Class/Tipos.php" ?>
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
     <title>VideoTeca</title>
 </head>
 <body class="m0 f-row w100p h100vh">
-    <input type="checkbox" name="" id="menu" class="v-hidden absolute">
+    <!-- <input type="checkbox" name="" id="menu" class="v-hidden absolute">
     <nav class="transition02 w25p">
         <div class="color7 white w100p h100p">
             <ul class="p10 m0 f-col gap10 colro2">
@@ -28,11 +29,11 @@
                         </div>
                         <div class="mayus menu_titulo">prensa</div>
                     </li>
-                </a>
-                <div class="hp10 mayus fz11 menu_titulo space-nw">
+                </a> -->
+                <!-- <div class="hp10 mayus fz11 menu_titulo space-nw">
                     area de programaci&oacute;n
-                </div>
-                <a href="../View/Programacion.php" class="white f-row p10 br7 transition02 hover8 negrita mayus">
+                </div> -->
+                <!-- <a href="../View/Programacion.php" class="white f-row p10 br7 transition02 hover8 negrita mayus">
                     <li class="f-row gap10">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
@@ -51,13 +52,13 @@
                         </div>
                         <div class="mayus menu_titulo">Galeria</div>
                     </li>
-                </a>
-            </ul>
+                </a> -->
+            <!-- </ul>
         </div>
         <label for="menu"></label>
-    </nav>
+    </nav> -->
     <main class="w100p f-col">
-        <header class="color6 p10 negrita mayus f-row a-c">
+        <!-- <header class="color6 p10 negrita mayus f-row a-c">
             <label class="br7 pointer f-row a-c gap5 fz20" for="menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -66,5 +67,5 @@
                     videoteca
                 </div>
             </label>
-        </header>
+        </header> -->
         <main class="f-col h100p p10 color7 overflow-hidden">
